@@ -1,0 +1,34 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+# Sample debian/rules that uses debhelper.
+# This file was originally written by Joey Hess and Craig Small.
+# As a special exception, when this file is copied by dh-make into a
+# dh-make output file, you may use that output file without restriction.
+# This special exception was added by Craig Small in version 0.37 of dh-make.
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+# hack: will only work on OBS-created chroots
+SOURCESDIR=/usr/src/packages/SOURCES/
+
+NAME=libfslcodec-4.0.1
+MD5=6f41d660de351a6cbc8dabe67e1a4774
+
+%:
+	dh $@ --sourcedirectory=$(NAME)
+
+build:
+	find $(SOURCESDIR) -maxdepth 1 -iname "$(NAME).bin" -exec cp -v {} ./ \; || true
+	./fetch.sh $(NAME).bin $(MD5)
+	chmod +x $(NAME).bin
+	./$(NAME).bin --auto-accept --force
+	dh $@ --sourcedirectory=$(NAME)
+
+clean:
+	rm -rf $(NAME) $(NAME).bin
+	dh $@
+
+override_dh_auto_configure:
+	cd $(NAME); NOCONFIGURE=1 ./autogen.sh; cd ..
+	dh_auto_configure -- --enable-vpu

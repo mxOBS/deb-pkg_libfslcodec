@@ -1,0 +1,2 @@
+usr/lib/imx-mm/audio-codec/*.so.*
+usr/lib/imx-mm/video-codec/*.so.*

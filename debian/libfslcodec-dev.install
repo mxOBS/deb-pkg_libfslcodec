@@ -1,0 +1,4 @@
+usr/include/imx-mm
+usr/lib/imx-mm/audio-codec/*.so
+usr/lib/imx-mm/video-codec/*.so
+usr/lib/pkgconfig/*
