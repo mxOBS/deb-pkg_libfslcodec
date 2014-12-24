@@ -1,3 +1,4 @@
 usr/lib/imx-mm/audio-codec
 usr/lib/imx-mm/video-codec
 usr/include
+usr/lib/pkgconfig
