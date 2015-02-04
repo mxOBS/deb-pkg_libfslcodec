@@ -60,7 +60,12 @@ chmod +x %{blobpkg_name}.bin
 %build
 cd %{blobpkg_name}
 NOCONFIGURE=1 ./autogen.sh
-%configure
+%configure \
+%ifarch armv7hl
+--enable-fhw \
+%endif
+%{_nop}
+
 make %{?_smp_mflags}
 cd ..
 
