@@ -32,3 +32,5 @@ clean:
 override_dh_auto_configure:
 	cd $(NAME); NOCONFIGURE=1 ./autogen.sh; cd ..
 	dh_auto_configure -- --enable-fhw --enable-vpu
+
+override_dh_shlibdeps:
