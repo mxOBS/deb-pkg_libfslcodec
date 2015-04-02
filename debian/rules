@@ -25,7 +25,11 @@ build:
 	./$(NAME).bin --auto-accept --force
 	dh $@ --sourcedirectory=$(NAME)
 
+	# additional config file
+	cat ld.so.conf.in | sed -e "s;@PREFIX@;/usr;g" > libfslcodec.conf
+
 clean:
+	rm -f *.conf
 	rm -rf $(NAME) $(NAME).bin
 	dh $@
 

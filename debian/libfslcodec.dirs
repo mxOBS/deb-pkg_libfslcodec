@@ -1,3 +1,4 @@
+/etc/ld.so.conf.d
 usr/lib/imx-mm/audio-codec
 usr/lib/imx-mm/audio-codec/wrap
 usr/lib/imx-mm/video-codec
