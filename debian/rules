@@ -12,8 +12,15 @@ export DH_VERBOSE=1
 # hack: will only work on OBS-created chroots
 SOURCESDIR=/usr/src/packages/SOURCES/
 
-NAME=libfslcodec-4.0.1
-MD5=6f41d660de351a6cbc8dabe67e1a4774
+NAME=libfslcodec-4.0.2
+MD5=a89ffc781292c56d4664f1ec67331243
+
+# generate configure flags
+CONFFLAGS=--enable-vpu
+# armhf or armel?
+ifeq (armhf,$(DEB_HOST_ARCH))
+  CONFFLAGS += --enable-fhw
+endif
 
 %:
 	dh $@ --sourcedirectory=$(NAME)
@@ -35,6 +42,6 @@ clean:
 
 override_dh_auto_configure:
 	cd $(NAME); NOCONFIGURE=1 ./autogen.sh; cd ..
-	dh_auto_configure -- --enable-fhw --enable-vpu
+	dh_auto_configure -- $(CONFFLAGS)
 
 override_dh_shlibdeps:

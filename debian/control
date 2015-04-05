@@ -1,17 +1,17 @@
 Source: libfslcodec
 Priority: extra
-Maintainer: unknown <unknown>
+Maintainer: Josua Mayer <privacy@not.given>
 Build-Depends: debhelper (>= 8.0.0), autotools-dev, pkg-config
 Standards-Version: 3.9.3
 Section: libs
 Homepage: <insert the upstream URL, if relevant>
-#Vcs-Git: git://git.debian.org/collab-maint/libfslcodec.git
-#Vcs-Browser: http://git.debian.org/?p=collab-maint/libfslcodec.git;a=summary
+Vcs-Git: https://github.com/mxOBS/deb-pkg_libfslcodec.git
+Vcs-Browser: https://github.com/mxOBS/deb-pkg_libfslcodec
 
 Package: libfslcodec-dev
 Section: libdevel
 Architecture: any
-Depends: libfslcodec (= ${binary:Version})
+Depends: libfslcodec (= ${binary:Version}), ${misc:Depends}
 Description: <insert up to 60 chars description>
  <insert long description, indented with spaces>
 
