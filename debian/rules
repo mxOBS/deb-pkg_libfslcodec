@@ -10,10 +10,10 @@
 export DH_VERBOSE=1
 
 # hack: will only work on OBS-created chroots
-SOURCESDIR=/usr/src/packages/SOURCES/
+SOURCESDIRS=~ /usr/src/packages/SOURCES/
 
-NAME=libfslcodec-4.0.2
-MD5=a89ffc781292c56d4664f1ec67331243
+NAME=libfslcodec-4.0.3
+MD5=829f88758622eab85b7427e5b488c8a0
 
 # generate configure flags
 CONFFLAGS=--enable-vpu
@@ -26,7 +26,7 @@ endif
 	dh $@ --sourcedirectory=$(NAME)
 
 build:
-	find $(SOURCESDIR) -maxdepth 1 -iname "$(NAME).bin" -exec cp -v {} ./ \; || true
+	find $(SOURCESDIRS) -maxdepth 1 -iname "$(NAME).bin" -exec cp -v {} ./ \; || true
 	./fetch.sh $(NAME).bin $(MD5)
 	chmod +x $(NAME).bin
 	./$(NAME).bin --auto-accept --force
