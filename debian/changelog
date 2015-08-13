@@ -1,3 +1,9 @@
+libfslcodec (4.0.6) stable; urgency=medium
+
+  * Freescale update
+
+ -- Josua Mayer <privacy@not.given>  Thu, 13 Aug 2015 21:55:24 +0800
+
 libfslcodec (4.0.3) stable; urgency=medium
 
   * fetch 4.0.3 from freescale

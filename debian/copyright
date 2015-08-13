@@ -25,9 +25,9 @@ License: MIT
 Files: libfslcodec-*/*
 Copyright: Freescale
 License: LA_OPT_FSL_OPEN_3RD_PARTY_IP
- FREESCALE SEMICONDUCTOR SOFTWARE LICENSE AGREEMENT v6 February 2015
+ v8 June 2015
  .
- See EULA.txt for the full text!
+ See /usr/share/doc/libfslcodec/EULA.txt for the full text!
 
 Files: debian/*
 Copyright: 2014 Josua Mayer <privacy@not.given>
