@@ -27,7 +27,7 @@ Copyright: Freescale
 License: LA_OPT_FSL_OPEN_3RD_PARTY_IP
  v8 June 2015
  .
- See /usr/share/doc/libfslcodec/EULA.txt for the full text!
+ See /usr/share/doc/libfslcodec/COPYING for the full text!
 
 Files: debian/*
 Copyright: 2014 Josua Mayer <privacy@not.given>

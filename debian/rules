@@ -12,8 +12,8 @@ export DH_VERBOSE=1
 # hack: will only work on OBS-created chroots
 SOURCESDIRS=~ /usr/src/packages/SOURCES/
 
-NAME=libfslcodec-4.0.6
-MD5=03cf5f5ad650bcebbf5efaf03442b9cc
+NAME=libfslcodec-4.0.7
+MD5=14de0ca4af46a5b7a597fc172072adbe
 
 # generate configure flags
 CONFFLAGS=--enable-vpu

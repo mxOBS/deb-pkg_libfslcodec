@@ -21,11 +21,11 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 
-%define blobpkg_name libfslcodec-4.0.6
-%define blobpkg_md5 03cf5f5ad650bcebbf5efaf03442b9cc
+%define blobpkg_name libfslcodec-4.0.7
+%define blobpkg_md5 14de0ca4af46a5b7a597fc172072adbe
 
 Name: libfslcodec
-Version: 4.0.6
+Version: 4.0.7
 Release: 1
 License: Unknown
 Group: Productivity/Multimedia/Other
