@@ -1,0 +1,5 @@
+libfslcodec binary: embedded-library
+libfslcodec binary: package-modifies-ld.so-search-path
+libfslcodec binary: shlib-with-non-pic-code
+libfslcodec binary: shlib-without-PT_GNU_STACK-section
+libfslcodec binary: shlib-with-executable-stack

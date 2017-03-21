@@ -12,12 +12,12 @@ Package: libfslcodec-dev
 Section: libdevel
 Architecture: any
 Depends: libfslcodec (= ${binary:Version}), ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Description: Development files for libfslcodec
+ Provides development libraries and headers for using libfslcodec.
 
 Package: libfslcodec
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Description: Freescale accelerated Codecs
+ Provides accelerated libraries to handle multimedia codecs supported by i.MX6.
