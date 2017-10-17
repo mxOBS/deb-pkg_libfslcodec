@@ -1,7 +1,11 @@
 Source: libfslcodec
 Priority: extra
 Maintainer: Josua Mayer <privacy@not.given>
-Build-Depends: debhelper (>= 8.0.0), autotools-dev, pkg-config
+Build-Depends:
+ debhelper (>= 8.0.0),
+ autotools-dev,
+ pkg-config,
+ libvpu-imx6-dev,
 Standards-Version: 3.9.3
 Section: libs
 Homepage: <insert the upstream URL, if relevant>
@@ -17,8 +21,11 @@ Description: Development files for libfslcodec
 
 Package: libfslcodec-doc
 Section: doc
-Architecture: all
-Depends: libfslcodec (= ${binary:Version}), ${misc:Depends}
+Architecture: armhf
+Depends:
+ libfslcodec (= ${binary:Version}),
+ ${shlibs:Depends},
+ ${misc:Depends},
 Description: Documentation for libfslcodec
  Provides documentation and sample code for libfslcodec.
 
