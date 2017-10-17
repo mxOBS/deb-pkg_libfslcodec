@@ -1,3 +1,9 @@
+libfslcodec (4.2.1) UNRELEASED; urgency=medium
+
+  * Freescale update
+
+ -- Josua Mayer <josua.mayer97@gmail.com>  Tue, 17 Oct 2017 10:10:24 +0200
+
 libfslcodec (4.0.7) stable; urgency=medium
 
   * Freescale update

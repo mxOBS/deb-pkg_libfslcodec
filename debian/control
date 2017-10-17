@@ -10,14 +10,21 @@ Vcs-Browser: https://github.com/mxOBS/deb-pkg_libfslcodec
 
 Package: libfslcodec-dev
 Section: libdevel
-Architecture: any
+Architecture: armhf armel
 Depends: libfslcodec (= ${binary:Version}), ${misc:Depends}
 Description: Development files for libfslcodec
  Provides development libraries and headers for using libfslcodec.
 
+Package: libfslcodec-doc
+Section: doc
+Architecture: all
+Depends: libfslcodec (= ${binary:Version}), ${misc:Depends}
+Description: Documentation for libfslcodec
+ Provides documentation and sample code for libfslcodec.
+
 Package: libfslcodec
 Section: libs
-Architecture: any
+Architecture: armhf armel
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Freescale accelerated Codecs
  Provides accelerated libraries to handle multimedia codecs supported by i.MX6.
